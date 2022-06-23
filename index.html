@@ -18,6 +18,9 @@
       #basic-addon3 {
         display: none;
       }
+      form {
+        display: flex;
+      }
     </style>
   </head>
   <body>
@@ -33,15 +36,18 @@
             <span class="input-group-text" id="basic-addon3"
               >https://api.nationalize.io/?name=</span
             >
-            <input
-              type="text"
-              class="form-control"
-              id="basic-url"
-              aria-describedby="basic-addon3"
-            />
-            <button type="submit" id="botunZaSlanje" class="btn btn-primary">
-              Pretraži
-            </button>
+            <form>
+              <input
+                type="text"
+                onfocus="this.value=''"
+                class="form-control"
+                id="basic-url"
+                aria-describedby="basic-addon3"
+              />
+              <button type="submit" id="botunZaSlanje" class="btn btn-primary">
+                Pretraži
+              </button>
+            </form>
           </div>
         </div>
         <div class="col-md-6 p-3 bg-primary text-white" id="maindiv">
